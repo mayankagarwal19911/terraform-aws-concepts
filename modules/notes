@@ -1,0 +1,13 @@
+terraform taint/ untaint: 
+ 
+When partial resource creation is failed(provisioners) or Like changing server version manually - resource is marked as tainted and terraform tries to re-create it again.
+Untainting : resource will not re-created.
+
+terraform import: When you want to manage other resources (not created by terraform - Ansible) using terraform.
+terraform import <resource_type>.<resource_name> <attribute>
+
+Terragrunt for DRY (Not supported with TFC): 
+    With terraform, if we use the module, we need to re-write variables.tf to accomodate module variables.
+
+Terraform get:
+    If provider plugin is already downloaded, get will only fetch module from registry with GET

@@ -1,0 +1,4 @@
+# terraform-aws-module
+.DS_Store
+env/*/.terraform/
+terraform.*.backup
