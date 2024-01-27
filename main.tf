@@ -2,9 +2,7 @@ resource "aws_instance" "instance"{
     instance_type = var.instance_type
     ami = var.ami
 
-    tags = {
-        Name = var.name   
-    }
+    tags = var.tags
     vpc_security_group_ids = var.security_groups_id
 
     user_data = <<-EOF

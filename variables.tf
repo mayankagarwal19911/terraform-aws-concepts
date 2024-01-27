@@ -13,3 +13,7 @@ variable "name"{
 variable "security_groups_id"{
     type = list
 }
+variable "tags" {
+    type = map(string)
+    default = {}
+}
